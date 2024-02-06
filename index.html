@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+    <head>
+        <title>Encriptador - ONE</title>
+        <link rel="stylesheet" href="reset.css/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <h1><img src="img/aluraicon.png" alt="Logo Alura"></h1>
+            </div>
+        </header>
+        <main>
+            <section class="text-box">
+                <label for="textbox">Ingrese el texto aqui</label>
+                <input type="text" id="textbox" required>
+            </section>
+            <section class="warning-message">
+                <i class="material-icons">&#xe000;</i>
+                <p>Solo letras minúsculas y sin acentos</p>
+            </section>
+            <section class="buttons">
+                <input type="submit" value="Encriptar" class="encrypt"> 
+                <input type="submit" value="Desencriptar" class="decrypt"> 
+            </section>
+        </main>
+        <footer>
+            <section class="not-found-img">
+                <img src="img/notfound.png">
+            </section>
+            <section class="message-content">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p class="no-message-alert">Ingresa el texto que desees encriptar o desencriptar</p>
+            </section>
+        </footer>
+
+    </body>
+</html>
