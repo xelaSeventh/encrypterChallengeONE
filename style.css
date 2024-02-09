@@ -1,108 +1,132 @@
-html {
-    width: 100%;
-    height: 100%;
-}
-
-head {
-    background-color: #f3f5fc;
-}
-
-body {
-    background-color: #f3f5fc;
+.grid {
+    display: grid;
+    grid-template-columns: 10% 60% 30%;
+    background: #F3F5FC;
+    width: auto;
+    height: auto;
 }
 
 .logo {
     width: 120px;
     height: 48px;
-    margin: 40px;
+    margin: 10px;
 }
 
 .text-box {
-    display: block;
-    width: 577px;
-    height: 48px;
-    margin-top: 168px;
-    margin-left: 240px;
+    margin-top: 25%;
+    width: auto;
+    height: max-content;
 }
 
 #textbox {
+    width: 577px;
+    height: 48px;
     background: none;
     border: none;
     font-size: 32px;
-    color: #0A3871;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .warning-message {
-    width: 229px;
-    height: 18px;
-    margin-top: 200px;
-    margin-left: 240px;
+    margin-top: 33%;
 }
 
 .material-icons {
-    width: 15px;
-    height: 10px;
-    margin-right: 10px;
+    opacity: 65%;
+    margin: 0%;
 }
 
 .warning-text {
     display: inline-block;
-    height: auto;
-    width: auto;
+    font-size: 16px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 12px;
-    line-height: 18px;
-    letter-spacing: 0em;
-    text-align: left;
     color: #495057;
 }
 
 .buttons {
-    width: 680px;
+    width: max-content;
     height: 67px;
-    margin-top: 100px;
-    margin-left: 240px;
-    gap: 24px;
+    margin-top: 10px;
+    margin-bottom: 2%;
 }
 
 .encrypt {
     width: 328px;
     height: 67px;
-    padding: 24px;
-    border-radius: 24px;
-    gap: 8px;
     background: #0A3871;
-    color: #f3f5fc;
-    font-size: 16px;
+    border-radius: 24px;
+    border: 1px solid #FFFFFF;
+    text-align: center;
+    color: #D8DFE8;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.encrypt:hover {
+    color: #0A3871;
+    border: 1px solid #0A3871;
+    background: #D8DFE8;
 }
 
 .decrypt {
     width: 328px;
     height: 67px;
-    padding: 24px;
+    background: #D8DFE8;
     border-radius: 24px;
-    border: 1px;
-    gap: 8px;
-    background: linear-gradient(0deg, #D8DFE8, #D8DFE8);
-    border: 1px solid #0A3871
+    border: 1px solid #0A3871;
+    text-align: center;
+    color: #0A3871;
+    font-size: 18px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.not-found {
-    width: 400px;
-    height: 944px;
-    margin-top: 40px;
-    margin-left: 1000px;
+.decrypt:hover {
+    color: #D8DFE8;
+    border: 1px solid #FFFFFF;
+    background: #0A3871;
+}
+
+.content {
+    width: 90%;
+    height: 90%;
     border-radius: 32px;
     background: #FFFFFF;
+    align-self: center;
 }
 
-.not-found img {
-    width: 336px;
-    height: 304px;
-    top: 283px;
-    left: 1032px;
-
+.not-found-img {
+    width: auto;
+    height: auto;
+    margin-top: 30%;
+    margin-left: 10%;
 }
-footer {
-    background-color: #f3f5fc;
+
+.not-found-message {
+    font-size: 35px;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 10%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #343A40;
+}
+
+.no-message-alert {
+    font-size: 15px;
+    font-weight: lighter;
+    text-align: center;
+    margin-top: 5%;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #343A40;
+    opacity: 60%;
+}
+
+.social-media {
+    margin-bottom: 2%;
+}
+
+.social-media a {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    color: #0A3871;
+    font-style: normal;
 }
