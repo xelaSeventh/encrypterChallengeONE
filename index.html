@@ -17,11 +17,11 @@
             </div>
             <div class="text-box">
                 <section class="box">
-                    <input type="text" id="textbox" required placeholder="Ingresa el texto a encriptar aquí:">
+                    <input type="text" id="textbox" maxlength="150" placeholder="Ingresa el texto a encriptar/desencriptar aquí:">
                 </section>
                 <section class="warning-message">
                     <i class="material-icons" style="font-size:18px; margin: 0px">error</i>
-                    <p class="warning-text">Solo letras minúsculas y sin acentos</p>
+                    <p class="warning-text">Máximo 150 carácteres. El resultado será convertido en minúsculas.</p>
                 </section>
                 <section class="buttons">
                     <button onclick="encryptMessage();" class="encrypt"> Encriptar </button>
@@ -33,13 +33,13 @@
             </div>
             <div class="content">
                 <section class="not-found-img">
-                    <img src="img/notfound.png">
+                    <img src="img/notfound.png" class="img-new">
                 </section>
                 <section class="not-found-message">
                     <h2>Ningún mensaje fue encontrado</h2>
                 </section>
-                <section>
-                    <p class="no-message-alert">Ingresa el texto que desees encriptar o desencriptar</p>
+                <section class="no-message-alert">
+                    <p>Ingresa el texto que desees encriptar o desencriptar</p>
                 </section>
             </div>
         </div>    

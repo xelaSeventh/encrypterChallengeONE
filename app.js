@@ -23,9 +23,18 @@ function encryptMessage() {
         }
     }
     // Imprimir el mensaje encriptado.
-    alert(messageEncrypted);
+    document.querySelector(".not-found-message").innerHTML = messageEncrypted;
+    document.querySelector(".no-message-alert").innerHTML = "Tu mensaje fue encriptado exitosamente.";
+    document.querySelector(".img-new").setAttribute("src", "img/secret.png");
+    document.getElementById("textbox").value = "";
 }   
 
 function decryptMessage() {
+    let messageEncrypted = String(document.getElementById("textbox").value).toLowerCase();
+    let messageDecrypted = messageEncrypted.replace(/enter/gi, "e").replace(/imes/gi, "i").replace(/ai/gi, "a").replace(/ober/gi, "o").replace(/ufat/gi, "u");
 
+    document.querySelector(".not-found-message").innerHTML = messageDecrypted;
+    document.querySelector(".no-message-alert").innerHTML = "Tu mensaje fue desencriptado exitosamente.";
+    document.querySelector(".img-new").setAttribute("src", "img/email.png");
+    document.getElementById("textbox").value = "";
 }
