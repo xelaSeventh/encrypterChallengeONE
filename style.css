@@ -112,13 +112,13 @@
 }
 
 .not-found-message {
-    font-size: auto;
+    font-size: 25px;
     font-weight: bolder;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: #343A40;
-    word-break: initial;
-    margin: 2px;
+    word-break: break-all;
+    margin: 4%;
 }
 
 .no-message-alert {
@@ -142,7 +142,7 @@
     font-style: normal;
 }
 
-@media screen and (max-width:680px) {
+@media screen and (max-width:1200px) {
     .grid {
         display: inline-block;
         width: 100%;
@@ -155,7 +155,7 @@
     }
 
     .logo {
-        width: 10%;
+        width: 7%;
         height: 4%;
 
     }
@@ -201,7 +201,7 @@
 
     .content {
         display: flow;
-        height: 50%;
+        height: 40%;
         margin-top: 0;
         margin-left: 5%;
     }
